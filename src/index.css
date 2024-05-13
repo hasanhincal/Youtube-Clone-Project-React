@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: black;
+  color: white;
+  /* overflow: hidden; */
+}
+
+.videos {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  padding: 20px;
+  gap: 50px;
+  overflow: auto;
+}
+
+.videos::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 5px;
+  background: transparent;
+}
+
+.videos::-webkit-scrollbar-thumb {
+  background: #818080;
+}
+/* detail sayfası */
+.detail_page {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: auto 400px;
+  padding: 40px 60px;
+}
+
+@media (min-width: 1400px) {
+  .detail_page {
+    padding: 40px 100px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .detail_page {
+    grid-template-columns: 1fr;
+    padding: 40px20px;
+  }
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 140px auto;
+  align-items: center;
+  gap: 20px;
+}
+
+.row .c-pic {
+  display: none;
+}
+
+.row .text {
+  display: none;
+}
