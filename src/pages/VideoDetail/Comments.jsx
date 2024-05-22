@@ -2,7 +2,6 @@ import React from "react";
 import { AiFillDislike, AiFillLike } from "react-icons/ai";
 import { IoMdArrowDropdown } from "react-icons/io";
 const Comments = ({ data }) => {
-  console.log(data);
   return (
     <div className="my-6">
       <h2 className="text-xl font-bold">{data?.commentsCount}</h2>

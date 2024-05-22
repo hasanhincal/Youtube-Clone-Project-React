@@ -35,7 +35,7 @@ const Header = () => {
             <CiSearch />
           </button>
         </form>
-        <button className="mx-l-[0] text-2xl transition-[250ms] hover:bg-zinc-800 rounded-full px-2 mx-2">
+        <button className="mx-l-[0] text-2xl transition-[250ms] bg-zinc-800 hover:bg-zinc-500 rounded-full px-2 mx-2">
           <IoMic />
         </button>
       </div>
